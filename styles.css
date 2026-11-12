@@ -1,0 +1,21 @@
+/* Custom CSS */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e40af;
+}
