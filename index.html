@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="font-inter bg-gray-100">
+    <header class="bg-white shadow">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-semibold text-gray-800">Modern E-commerce</a>
+            <div class="flex space-x-4">
+                <a href="index.html" class="text-gray-700 hover:text-gray-900">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-gray-900">About</a>
+                <a href="cart.html" class="text-gray-700 hover:text-gray-900">Cart</a>
+                <a href="checkout.html" class="text-gray-700 hover:text-gray-900">Checkout</a>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto px-6 py-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-8">Product Catalog</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow p-6">
+                <img src="https://source.unsplash.com/random/400x300" alt="Product" class="rounded-lg mb-4">
+                <h2 class="text-xl font-semibold text-gray-800">Product 1</h2>
+                <p class="text-gray-600">₹999</p>
+                <button onclick="addToCartAndRedirect('Product 1', 999)" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Buy Now</button>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+                <img src="https://source.unsplash.com/random/400x300" alt="Product" class="rounded-lg mb-4">
+                <h2 class="text-xl font-semibold text-gray-800">Product 2</h2>
+                <p class="text-gray-600">₹1499</p>
+                <button onclick="addToCartAndRedirect('Product 2', 1499)" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Buy Now</button>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+                <img src="https://source.unsplash.com/random/400x300" alt="Product" class="rounded-lg mb-4">
+                <h2 class="text-xl font-semibold text-gray-800">Product 3</h2>
+                <p class="text-gray-600">₹1999</p>
+                <button onclick="addToCartAndRedirect('Product 3', 1999)" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Buy Now</button>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+
+<script>document.addEventListener("DOMContentLoaded", function() { if (window.lucide) { window.lucide.createIcons(); } });</script>
+</body>
+</html>
